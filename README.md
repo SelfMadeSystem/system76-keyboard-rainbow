@@ -35,6 +35,14 @@ set -gx PATH $PATH $HOME/.cargo/bin
 
 ## Usage
 
+The program must be run as root to access the following files:
+- `/sys/class/leds/system76_acpi::kbd_backlight/color`
+- `/sys/class/leds/system76_acpi::kbd_backlight/brightness`
+
+If you don't want to run the program as root, you can change the permissions of
+these files. I run it as root because I'm lazy. You can probably figure out how
+to do this yourself.
+
 You can run the program with:
 
 ```bash
@@ -66,6 +74,11 @@ system76-keyboard-rainbow -c 10
 The brightness should already be set to what it was before running the program
 when it exits. It should also automatically adjust when you change the
 brightness with the keyboard. If it doesn't, please report it as an issue.
+
+## What's the `keyboard_led_rainbow.sh` file?
+
+That's the original script I wrote to do this. It took up to 10% of my CPU when
+running, so I decided to rewrite it in Rust. I'm keeping it here for posterity.
 
 ## License
 

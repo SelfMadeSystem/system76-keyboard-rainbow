@@ -4,6 +4,12 @@ This is a simple program to have a rainbow keyboard on System76 laptops. It
 should work on any System76 laptop with a backlit keyboard. Please report any
 issues you have with it.
 
+Tested on a System76 Gazelle (gaze18) laptop running Pop!_OS 22.04.
+
+The brightness should already be set to what it was before running the program
+when it exits. It should also automatically adjust when you change the
+brightness with the keyboard. If it doesn't, please report it as an issue.
+
 ## Installation
 
 You must install `rust` and `cargo` to build this program. You can install them
@@ -70,10 +76,6 @@ option. For example, to have a 10 increment:
 ```bash
 system76-keyboard-rainbow -c 10
 ```
-
-The brightness should already be set to what it was before running the program
-when it exits. It should also automatically adjust when you change the
-brightness with the keyboard. If it doesn't, please report it as an issue.
 
 ## What's the `keyboard_led_rainbow.sh` file?
 

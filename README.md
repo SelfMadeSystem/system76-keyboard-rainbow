@@ -10,6 +10,14 @@ The brightness should already be set to what it was before running the program
 when it exits. It should also automatically adjust when you change the
 brightness with the keyboard. If it doesn't, please report it as an issue.
 
+# Video
+
+Here's a video of me using it. It looks better in person. You also can't really see
+the brightness change, but it's very evident when you're actually using it. Furthermore,
+it does reset to how your brightness/color was before you started the program.
+
+https://github.com/SelfMadeSystem/system76-keyboard-rainbow/assets/38010540/c8e86d27-06a2-4c01-b5da-530d85edc67c
+
 ## Installation
 
 You must install `rust` and `cargo` to build this program. You can install them
